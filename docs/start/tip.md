@@ -8,6 +8,8 @@
 `{command}`
 :   操作系统级命令的名称，例如 {command}`rm`。
 
+目录使用 `{tableofcontents}` 指令。
+
 ## 指令
 
 ```rst
