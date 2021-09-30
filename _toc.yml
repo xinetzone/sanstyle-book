@@ -26,5 +26,5 @@ parts:
   - file: docs/other/index
     sections:
     - glob: docs/other/**
-    - url: https://xinetzone.github.io/sanstyle-book/
-      title: Sanstyle Book
+    - url: https://xinetzone.github.io/wiki/
+      title: Wiki
