@@ -70,7 +70,7 @@ var addUtterances = () => {
     script.src = "https://utteranc.es/client.js";
     script.async = "async";
 
-    script.setAttribute("repo", "xinetzone/sanstyle-starter");
+    script.setAttribute("repo", "xinetzone/sanstyle-book");
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
     script.setAttribute("label", "💬 comment");
@@ -94,12 +94,12 @@ commentsRunWhenDOMLoaded(addUtterances);
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://xinetzone.github.io/sanstyle-starter/docs/start/index.html" />
+    <link rel="canonical" href="https://xinetzone.github.io/sanstyle-book/docs/start/index.html" />
     <link rel="shortcut icon" href="../../_static/page-logo.jfif"/>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="next" title="如何启动项目" href="00_how.html" />
-    <link rel="prev" title="Sanstyle 模板" href="../../README.html" />
+    <link rel="prev" title="Sanstyle Book" href="../../README.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -139,7 +139,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../README.html">
-   Sanstyle 模板
+   Sanstyle Book
   </a>
  </li>
  <li class="toctree-l1 current active has-children">
@@ -157,6 +157,21 @@ commentsRunWhenDOMLoaded(addUtterances);
      如何启动项目
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="00_intro.html">
+     Sanstyle 家族
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="build-ai.html">
+     从零开始搭建 AI 环境
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="tip.html">
+     Jupyter Book 常用角色和指令
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -169,6 +184,11 @@ commentsRunWhenDOMLoaded(addUtterances);
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorials/00_kaggle-api.html">
+     Kaggle 命令行工具
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../tutorials/what.html">
      What
@@ -250,8 +270,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference external" href="https://xinetzone.github.io/sanstyle-book/">
-     Sanstyle Book
+    <a class="reference external" href="https://xinetzone.github.io/wiki/">
+     Wiki
     </a>
    </li>
   </ul>
@@ -336,11 +356,11 @@ commentsRunWhenDOMLoaded(addUtterances);
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/xinetzone/sanstyle-starter"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/xinetzone/sanstyle-book"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/xinetzone/sanstyle-starter/issues/new?title=Issue%20on%20page%20%2Fdocs/start/index.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/xinetzone/sanstyle-book/issues/new?title=Issue%20on%20page%20%2Fdocs/start/index.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -372,6 +392,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>快速上手<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <p>告诉读者如何做某事的简短指南。假定读者拥有一些背景知识（通常，读者已经过阅读教程）。读者专注于“做事”而不是长篇大论的解释。How To 指南构成了大部分的文档，并且针对不同的主题分为不同的部分。</p>
+<p>可参考：<a class="reference external" href="https://www.jianshu.com/p/b260adaa5d31">一天内快速构建个人知识库网站 - 简书 (jianshu.com)</a>。</p>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -380,7 +401,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     {
         requestKernel: true,
         binderOptions: {
-            repo: "xinetzone/sanstyle-starter",
+            repo: "xinetzone/sanstyle-book",
             ref: "main",
         },
         codeMirrorConfig: {
@@ -410,7 +431,7 @@ commentsRunWhenDOMLoaded(addUtterances);
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">上一页</p>
-                <p class="prevnext-title">Sanstyle 模板</p>
+                <p class="prevnext-title">Sanstyle Book</p>
             </div>
         </a>
     </div>

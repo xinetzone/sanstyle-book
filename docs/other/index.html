@@ -70,7 +70,7 @@ var addUtterances = () => {
     script.src = "https://utteranc.es/client.js";
     script.async = "async";
 
-    script.setAttribute("repo", "xinetzone/sanstyle-starter");
+    script.setAttribute("repo", "xinetzone/sanstyle-book");
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
     script.setAttribute("label", "💬 comment");
@@ -94,7 +94,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://xinetzone.github.io/sanstyle-starter/docs/other/index.html" />
+    <link rel="canonical" href="https://xinetzone.github.io/sanstyle-book/docs/other/index.html" />
     <link rel="shortcut icon" href="../../_static/page-logo.jfif"/>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -139,7 +139,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../README.html">
-   Sanstyle 模板
+   Sanstyle Book
   </a>
  </li>
  <li class="toctree-l1 has-children">
@@ -157,6 +157,21 @@ commentsRunWhenDOMLoaded(addUtterances);
      如何启动项目
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../start/00_intro.html">
+     Sanstyle 家族
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../start/build-ai.html">
+     从零开始搭建 AI 环境
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../start/tip.html">
+     Jupyter Book 常用角色和指令
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -169,6 +184,11 @@ commentsRunWhenDOMLoaded(addUtterances);
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorials/00_kaggle-api.html">
+     Kaggle 命令行工具
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../tutorials/what.html">
      What
@@ -250,8 +270,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference external" href="https://xinetzone.github.io/sanstyle-book/">
-     Sanstyle Book
+    <a class="reference external" href="https://xinetzone.github.io/wiki/">
+     Wiki
     </a>
    </li>
   </ul>
@@ -336,11 +356,11 @@ commentsRunWhenDOMLoaded(addUtterances);
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/xinetzone/sanstyle-starter"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/xinetzone/sanstyle-book"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/xinetzone/sanstyle-starter/issues/new?title=Issue%20on%20page%20%2Fdocs/other/index.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/xinetzone/sanstyle-book/issues/new?title=Issue%20on%20page%20%2Fdocs/other/index.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -361,6 +381,24 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   工具
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   资源
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -371,6 +409,28 @@ commentsRunWhenDOMLoaded(addUtterances);
                 
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>外部资源<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://tvm.d2l.ai/index.html">Dive into Deep Learning Compiler — Dive into Deep Learning Compiler 0.1 documentation (d2l.ai)</a></p></li>
+<li><p><a class="reference external" href="https://aieye-top.github.io/d2cl/index.html">Dive into cheap deep learning — Dive into cheap deep learning 0.0.2 documentation (aieye-top.github.io)</a></p></li>
+<li><p><a class="reference external" href="https://github.com/eastmountyxz/ImageProcessing-Python">eastmountyxz/ImageProcessing-Python: 该资源为作者在CSDN的撰写Python图像处理文章的支撑，主要是Python实现图像处理、图像识别、图像分类等算法代码实现，希望该资源对您有所帮助，一起加油。 (github.com)</a></p></li>
+</ul>
+<section id="id2">
+<h2>工具<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/jreese/markdown-pp">jreese/markdown-pp: Preprocessor for Markdown files to generate a table of contents and other documentation needs (github.com)</a></p></li>
+<li><p><a class="reference external" href="https://github.com/thibaultmarin/hpp2plantuml">thibaultmarin/hpp2plantuml: Convert C++ header files to PlantUML (github.com)</a></p></li>
+<li><p><a class="reference external" href="http://www.uml.org.cn/index.asp">UML软件工程组织-火龙果软件工程</a></p></li>
+<li><p><a class="reference external" href="https://zhuanlan.zhihu.com/p/347581976">微软开源最强Python自动化神器Playwright！不用写一行代码！ - 知乎 (zhihu.com)</a></p></li>
+<li><p><a class="reference external" href="https://zhuanlan.zhihu.com/p/347213089">Playwright: 比 Puppeteer 更好用的浏览器自动化工具 - 知乎 (zhihu.com)</a></p></li>
+<li><p><a class="reference external" href="https://playwright.dev/python/">Fast and reliable end-to-end testing for modern web apps | Playwright Python</a></p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>资源<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://viadean.com/">国外课栈 (viadean.com)</a>|<a class="reference external" href="http://viadean.com/embedded.html">嵌入式 - 国外课栈 (viadean.com)</a></p></li>
+</ul>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -379,7 +439,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     {
         requestKernel: true,
         binderOptions: {
-            repo: "xinetzone/sanstyle-starter",
+            repo: "xinetzone/sanstyle-book",
             ref: "main",
         },
         codeMirrorConfig: {

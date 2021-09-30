@@ -70,7 +70,7 @@ var addUtterances = () => {
     script.src = "https://utteranc.es/client.js";
     script.async = "async";
 
-    script.setAttribute("repo", "xinetzone/sanstyle-starter");
+    script.setAttribute("repo", "xinetzone/sanstyle-book");
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
     script.setAttribute("label", "💬 comment");
@@ -94,7 +94,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://xinetzone.github.io/sanstyle-starter/docs/principle/topic.html" />
+    <link rel="canonical" href="https://xinetzone.github.io/sanstyle-book/docs/principle/topic.html" />
     <link rel="shortcut icon" href="../../_static/page-logo.jfif"/>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="搜索" href="../../search.html" />
@@ -139,7 +139,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../README.html">
-   Sanstyle 模板
+   Sanstyle Book
   </a>
  </li>
  <li class="toctree-l1 has-children">
@@ -157,6 +157,21 @@ commentsRunWhenDOMLoaded(addUtterances);
      如何启动项目
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../start/00_intro.html">
+     Sanstyle 家族
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../start/build-ai.html">
+     从零开始搭建 AI 环境
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../start/tip.html">
+     Jupyter Book 常用角色和指令
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -169,6 +184,11 @@ commentsRunWhenDOMLoaded(addUtterances);
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorials/00_kaggle-api.html">
+     Kaggle 命令行工具
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../tutorials/what.html">
      What
@@ -250,8 +270,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference external" href="https://xinetzone.github.io/sanstyle-book/">
-     Sanstyle Book
+    <a class="reference external" href="https://xinetzone.github.io/wiki/">
+     Wiki
     </a>
    </li>
   </ul>
@@ -336,11 +356,11 @@ commentsRunWhenDOMLoaded(addUtterances);
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/xinetzone/sanstyle-starter"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/xinetzone/sanstyle-book"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/xinetzone/sanstyle-starter/issues/new?title=Issue%20on%20page%20%2Fdocs/principle/topic.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/xinetzone/sanstyle-book/issues/new?title=Issue%20on%20page%20%2Fdocs/principle/topic.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -371,13 +391,15 @@ commentsRunWhenDOMLoaded(addUtterances);
                 
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>高级教程<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>告诉读者如何做某事的简短指南。假定读者拥有一些背景知识（通常，读者已经过阅读教程）。读者专注于“做事”而不是长篇大论的解释。How To 指南构成了大部分的文档，并且针对不同的主题分为不同的部分。</p>
+<p>有关的主题和概念的更高层次的讨论。他们不太专注于做事情，而更专注于获得关于如何工作的概念性框架。</p>
 </section>
 
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
-            repo: "xinetzone/sanstyle-starter",
+            repo: "xinetzone/sanstyle-book",
             ref: "main",
         },
         codeMirrorConfig: {
