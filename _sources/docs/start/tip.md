@@ -19,11 +19,3 @@
         |                               |
         +-------------------------------+
 ```
-
-编程语言指令：
-
-- [](rst:domains/python)
-- [](rst:domains/c)
-- [](rst:domains/cpp)
-- [](rst:domains/javascript)
-- [](rst:domains/rst)
