@@ -4,12 +4,11 @@
 <html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>从零开始搭建 AI 环境</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -33,13 +32,13 @@
     <link rel="stylesheet" type="text/css" href="../../_static/page.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/xin-css/main.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3pro.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3mobile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3pro.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -101,7 +100,10 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="next" title="Jupyter Book 常用角色和指令" href="tip.html" />
     <link rel="prev" title="Sanstyle 家族" href="00_intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -131,7 +133,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption" role="heading">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   教程
  </span>
@@ -197,7 +199,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   原理
  </span>
@@ -221,7 +223,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   混沌
  </span>
@@ -416,7 +418,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="ai">
+  <div class="tex2jax_ignore mathjax_ignore section" id="ai">
 <h1>从零开始搭建 AI 环境<a class="headerlink" href="#ai" title="永久链接至标题">¶</a></h1>
 <dl class="describe">
 <dt class="sig sig-object">
@@ -452,7 +454,7 @@ git config --global user.email <span class="s2">&quot;email@example.com&quot;</s
 </div>
 </dd></dl>
 
-<section id="jupyter-notebook">
+<div class="section" id="jupyter-notebook">
 <h2>安装 <a class="reference external" href="https://xinetzone.github.io/wiki/glossary/jupyter.html#term-Jupyter" title="(在 Python)"><span class="xref std std-term">Jupyter</span></a> Notebook 扩展<a class="headerlink" href="#jupyter-notebook" title="永久链接至标题">¶</a></h2>
 <p><a class="reference external" href="https://github.com/ipython-contrib/jupyter_contrib_nbextensions">ipython-contrib/jupyter_contrib_nbextensions</a> 这个存储库包含了一个扩展集合，可以为 Jupyter 笔记本添加功能。这些扩展大多是用 <a class="reference external" href="https://xinetzone.github.io/wiki/glossary/javascript.html#term-JavaScript" title="(在 Python)"><span class="xref std std-term">JavaScript</span></a> 编写的，将在浏览器中本地加载。</p>
 <p>IPython-contrib 存储库由一组用户和开发人员独立维护，与 IPython 开发团队没有正式关系。</p>
@@ -462,8 +464,8 @@ jupyter nbextensions_configurator <span class="nb">enable</span> --user
 pip install autopep8 --user
 </pre></div>
 </div>
-</section>
-<section id="mamba">
+</div>
+<div class="section" id="mamba">
 <h2>Mamba<a class="headerlink" href="#mamba" title="永久链接至标题">¶</a></h2>
 <p>Conda 作为使用最为广泛的数据科学环境管理工具，可以协助我们很方便的完成创建管理环境、下载安装第三方库、软件包等操作，但其在下载资源的过程中下载速度时常令人捉急，即使使用连接速度更快的国内镜像，也摆脱不了其单线程挨个下载资源导致的低效问题。</p>
 <p>而 Mamba（黑曼巴）专为加速Conda而生，其改写了 Conda 下载资源的固有方式，以多线程的方式对网络资源进行并行下载，从而大幅提升 Conda 效率。</p>
@@ -472,8 +474,8 @@ pip install autopep8 --user
 </pre></div>
 </div>
 <p>安装完成之后，当你运行 <code class="docutils literal notranslate"><span class="pre">mamba</span> <span class="pre">-V</span></code> 查看其版本时会发现返回的是 Conda 的版本信息，这是因为 Mamba 的本质是对 Conda 功能的覆盖，因此我们在使用 Mamba 时其实只要将原有的 Conda 语句中的 conda 替换为 mamba 即可，譬如我们常用的 <code class="docutils literal notranslate"><span class="pre">mamba</span> <span class="pre">clean</span> <span class="pre">--all</span></code>，即清空本地缓存安装包。</p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -498,31 +500,22 @@ pip install autopep8 --user
               </div>
               
         
-            
-
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="00_intro.html" title="上一页 页">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">上一页</p>
-                <p class="prevnext-title">Sanstyle 家族</p>
-            </div>
-        </a>
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="00_intro.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Sanstyle 家族</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="tip.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">Jupyter Book 常用角色和指令</p>
     </div>
-     <div id="next">
-        <a class="right-next" href="tip.html" title="下一页 页">
-            <div class="prevnext-info">
-                <p class="prevnext-label">下一页</p>
-                <p class="prevnext-title">Jupyter Book 常用角色和指令</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
         
         </div>
@@ -548,8 +541,7 @@ pip install autopep8 --user
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

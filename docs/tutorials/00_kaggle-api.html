@@ -4,12 +4,11 @@
 <html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kaggle 命令行工具</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -33,13 +32,13 @@
     <link rel="stylesheet" type="text/css" href="../../_static/page.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/xin-css/main.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3pro.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3mobile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3pro.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -101,7 +100,10 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="next" title="What" href="what.html" />
     <link rel="prev" title="指南" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -131,7 +133,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption" role="heading">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   教程
  </span>
@@ -197,7 +199,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   原理
  </span>
@@ -221,7 +223,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   混沌
  </span>
@@ -434,7 +436,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="kaggle">
+  <div class="tex2jax_ignore mathjax_ignore section" id="kaggle">
 <span id="kaggle-api"></span><h1>Kaggle 命令行工具<a class="headerlink" href="#kaggle" title="永久链接至标题">¶</a></h1>
 <p>参考：<a class="reference external" href="https://www.kaggle.com/docs/api">Public API Documentation | Kaggle</a></p>
 <p>kaggle 命令行工具安装：</p>
@@ -456,7 +458,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </pre></div>
 </div>
 <p>其中，<code class="docutils literal notranslate"><span class="pre">username</span></code> 字段是 kaggle 账户的用户名，<code class="docutils literal notranslate"><span class="pre">key</span></code> 字段，则是用户的专属 API Key。<code class="docutils literal notranslate"><span class="pre">path</span></code> 字段即 Kaggle 下载数据集的目录。如果不设置 <code class="docutils literal notranslate"><span class="pre">path</span></code> 字段，Kaggle 默认的下载目录是用户主目录即 <code class="docutils literal notranslate"><span class="pre">$HOME</span></code>。</p>
-<section id="competitions">
+<div class="section" id="competitions">
 <h2>使用 <code class="docutils literal notranslate"><span class="pre">competitions</span></code> 进行交互<a class="headerlink" href="#competitions" title="永久链接至标题">¶</a></h2>
 <p>Kaggle API 和 CLI 工具提供了在 Kaggle 上与 Competitions 交互的简单方法。可用的命令可以使参与竞赛成为模型构建工作流的无缝组成部分。</p>
 <ul class="simple">
@@ -464,16 +466,16 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li><p><code class="docutils literal notranslate"><span class="pre">kaggle</span> <span class="pre">competitions</span> <span class="pre">download</span> <span class="pre">-c</span> <span class="pre">[COMPETITION]</span></code>：下载与比赛相关的文件</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">kaggle</span> <span class="pre">competitions</span> <span class="pre">submit</span> <span class="pre">-c</span> <span class="pre">[COMPETITION]</span> <span class="pre">-f</span> <span class="pre">[FILE]</span> <span class="pre">-m</span> <span class="pre">[MESSAGE]</span></code>：提交参赛作品</p></li>
 </ul>
-</section>
-<section id="datasets">
+</div>
+<div class="section" id="datasets">
 <h2>使用 <code class="docutils literal notranslate"><span class="pre">datasets</span></code> 进行交互<a class="headerlink" href="#datasets" title="永久链接至标题">¶</a></h2>
 <p>Kaggle API 和 CLI 工具提供了与 Kaggle 上的数据集交互的简单方法。可用的命令可以使搜索和下载 Kaggle 数据集成为您的数据科学工作流的无缝部分。</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">kaggle</span> <span class="pre">datasets</span> <span class="pre">list</span> <span class="pre">-s</span> <span class="pre">[KEYWORD]</span></code>：列出匹配搜索项的数据集</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">kaggle</span> <span class="pre">datasets</span> <span class="pre">download</span> <span class="pre">-d</span> <span class="pre">[DATASET]</span></code>：下载与数据集关联的文件</p></li>
 </ul>
-</section>
-<section id="id1">
+</div>
+<div class="section" id="id1">
 <h2>创建新的数据集<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <p>以下是在 Kaggle 上创建新数据集的步骤：</p>
 <ul class="simple">
@@ -484,8 +486,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li><p>运行 <code class="docutils literal notranslate"><span class="pre">kaggle</span> <span class="pre">datasets</span> <span class="pre">version</span> <span class="pre">-p</span> <span class="pre">/path/to/dataset</span> <span class="pre">-m</span> <span class="pre">&quot;Your</span> <span class="pre">message</span> <span class="pre">here&quot;</span></code> 创建数据集的版本</p></li>
 </ul>
 <p>默认情况下，您的数据集是私有的。您也可以添加一个 <code class="docutils literal notranslate"><span class="pre">-u</span></code> 标志，使其公共时，您创建它，或导航到“设置”&gt;“共享”从您的数据集的页面，使其公共或与合作者共享。</p>
-</section>
-<section id="id2">
+</div>
+<div class="section" id="id2">
 <h2>其他<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <p>为了方便本地电脑使用数据集，可以定义数据集根目录：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">kaggle_root</span><span class="p">():</span>
@@ -495,8 +497,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <span class="k">return</span> <span class="n">root</span>
 </pre></div>
 </div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -521,31 +523,22 @@ commentsRunWhenDOMLoaded(addUtterances);
               </div>
               
         
-            
-
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="index.html" title="上一页 页">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">上一页</p>
-                <p class="prevnext-title">指南</p>
-            </div>
-        </a>
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="index.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">指南</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="what.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">What</p>
     </div>
-     <div id="next">
-        <a class="right-next" href="what.html" title="下一页 页">
-            <div class="prevnext-info">
-                <p class="prevnext-label">下一页</p>
-                <p class="prevnext-title">What</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
         
         </div>
@@ -571,8 +564,7 @@ commentsRunWhenDOMLoaded(addUtterances);
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

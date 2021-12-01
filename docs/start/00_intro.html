@@ -4,12 +4,11 @@
 <html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sanstyle 家族</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -33,13 +32,13 @@
     <link rel="stylesheet" type="text/css" href="../../_static/page.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/xin-css/main.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3pro.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3mobile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3pro.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -101,7 +100,10 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="next" title="从零开始搭建 AI 环境" href="build-ai.html" />
     <link rel="prev" title="如何启动项目" href="00_how.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -131,7 +133,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption" role="heading">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   教程
  </span>
@@ -197,7 +199,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   原理
  </span>
@@ -221,7 +223,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   混沌
  </span>
@@ -466,7 +468,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="sanstyle">
+  <div class="tex2jax_ignore mathjax_ignore section" id="sanstyle">
 <span id="sanstyle-intro"></span><h1>Sanstyle 家族<a class="headerlink" href="#sanstyle" title="永久链接至标题">¶</a></h1>
 <p>为了方便管理代码和数据创建仓库：</p>
 <ul class="simple">
@@ -478,7 +480,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install dash-xinet sanstyle -i https://pypi.org/simple/ 
 </pre></div>
 </div>
-<section id="dash-xinet">
+<div class="section" id="dash-xinet">
 <h2><code class="docutils literal notranslate"><span class="pre">dash_xinet</span></code><a class="headerlink" href="#dash-xinet" title="永久链接至标题">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">dash_xinet.server</span> <span class="kn">import</span> <span class="n">create_app</span><span class="p">,</span> <span class="n">run_server</span>
 <span class="kn">from</span> <span class="nn">dash_xinet.utils.nav</span> <span class="kn">import</span> <span class="n">create_nav</span>
@@ -493,8 +495,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </pre></div>
 </div>
 <p>更多内容可阅读：<a class="reference external" href="https://xinetzone.github.io/dash-book/">Sansty Dash — Dash 手册 (xinetzone.github.io)</a>。</p>
-</section>
-<section id="id1">
+</div>
+<div class="section" id="id1">
 <h2><code class="docutils literal notranslate"><span class="pre">sanstyle</span></code><a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <p>可以直接批量修改文件后缀：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rename_suffix</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">old</span><span class="p">,</span> <span class="n">new</span><span class="p">)</span>
@@ -508,7 +510,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <dt><code class="docutils literal notranslate"><span class="pre">new</span></code></dt><dd><p>修改后的文件后缀，如 <code class="docutils literal notranslate"><span class="pre">.rst</span></code></p>
 </dd>
 </dl>
-<section id="embed">
+<div class="section" id="embed">
 <h3>创建 <code class="docutils literal notranslate"><span class="pre">&lt;embed&gt;</span></code> 元素<a class="headerlink" href="#embed" title="永久链接至标题">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -529,9 +531,9 @@ commentsRunWhenDOMLoaded(addUtterances);
 <div class="cell_output docutils container">
 </div>
 </div>
-</section>
-</section>
-<section id="plotly-dastsets">
+</div>
+</div>
+<div class="section" id="plotly-dastsets">
 <h2>导入 <code class="docutils literal notranslate"><span class="pre">plotly-dastsets</span></code><a class="headerlink" href="#plotly-dastsets" title="永久链接至标题">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -682,8 +684,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </table>
 </div></div></div>
 </div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -708,31 +710,22 @@ commentsRunWhenDOMLoaded(addUtterances);
               </div>
               
         
-            
-
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="00_how.html" title="上一页 页">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">上一页</p>
-                <p class="prevnext-title">如何启动项目</p>
-            </div>
-        </a>
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="00_how.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">如何启动项目</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="build-ai.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">从零开始搭建 AI 环境</p>
     </div>
-     <div id="next">
-        <a class="right-next" href="build-ai.html" title="下一页 页">
-            <div class="prevnext-info">
-                <p class="prevnext-label">下一页</p>
-                <p class="prevnext-title">从零开始搭建 AI 环境</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
         
         </div>
@@ -758,8 +751,7 @@ commentsRunWhenDOMLoaded(addUtterances);
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

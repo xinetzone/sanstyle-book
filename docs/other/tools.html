@@ -4,12 +4,11 @@
 <html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>工具</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -33,13 +32,13 @@
     <link rel="stylesheet" type="text/css" href="../../_static/page.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/xin-css/main.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3pro.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3mobile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3pro.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -100,7 +99,10 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="search" title="搜索" href="../../search.html" />
     <link rel="prev" title="未分类资源" href="raw.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -130,7 +132,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption" role="heading">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   教程
  </span>
@@ -196,7 +198,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   原理
  </span>
@@ -220,7 +222,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   混沌
  </span>
@@ -393,7 +395,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
 <h1>工具<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/jreese/markdown-pp">jreese/markdown-pp: Preprocessor for Markdown files to generate a table of contents and other documentation needs (github.com)</a></p></li>
@@ -403,7 +405,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <li><p><a class="reference external" href="https://zhuanlan.zhihu.com/p/347213089">Playwright: 比 Puppeteer 更好用的浏览器自动化工具 - 知乎 (zhihu.com)</a></p></li>
 <li><p><a class="reference external" href="https://playwright.dev/python/">Fast and reliable end-to-end testing for modern web apps | Playwright Python</a></p></li>
 </ul>
-</section>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -428,22 +430,15 @@ commentsRunWhenDOMLoaded(addUtterances);
               </div>
               
         
-            
-
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="raw.html" title="上一页 页">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">上一页</p>
-                <p class="prevnext-title">未分类资源</p>
-            </div>
-        </a>
-    </div>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="raw.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">未分类资源</p>
+        </div>
+    </a>
 </div>
         
         </div>
@@ -469,8 +464,7 @@ commentsRunWhenDOMLoaded(addUtterances);
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

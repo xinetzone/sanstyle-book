@@ -4,12 +4,11 @@
 <html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jupyter Book 常用角色和指令</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -33,13 +32,13 @@
     <link rel="stylesheet" type="text/css" href="../../_static/page.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/xin-css/main.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3pro.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3mobile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3pro.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/w3css/4/w3.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -101,7 +100,10 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="next" title="指南" href="../tutorials/index.html" />
     <link rel="prev" title="从零开始搭建 AI 环境" href="build-ai.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -131,7 +133,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption" role="heading">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   教程
  </span>
@@ -197,7 +199,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   原理
  </span>
@@ -221,7 +223,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   </ul>
  </li>
 </ul>
-<p class="caption" role="heading">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   混沌
  </span>
@@ -417,9 +419,9 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="jupyter-book">
+  <div class="tex2jax_ignore mathjax_ignore section" id="jupyter-book">
 <h1>Jupyter Book 常用角色和指令<a class="headerlink" href="#jupyter-book" title="永久链接至标题">¶</a></h1>
-<section id="rolename-content">
+<div class="section" id="rolename-content">
 <h2>角色 <code class="docutils literal notranslate"><span class="pre">{rolename}`content`</span></code><a class="headerlink" href="#rolename-content" title="永久链接至标题">¶</a></h2>
 <dl class="simple myst">
 <dt><code class="docutils literal notranslate"><span class="pre">{kbd}</span></code></dt><dd><p>渲染键盘按键，如 <kbd class="kbd docutils literal notranslate">Alt</kbd>。</p>
@@ -428,8 +430,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </dd>
 </dl>
 <p>目录使用 <code class="docutils literal notranslate"><span class="pre">{tableofcontents}</span></code> 指令。</p>
-</section>
-<section id="id1">
+</div>
+<div class="section" id="id1">
 <h2>指令<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>+-------+-------------------------------+
 <span class="o">|</span> &quot;.. &quot; | directive type &quot;::&quot; directive |
@@ -438,8 +440,8 @@ commentsRunWhenDOMLoaded(addUtterances);
         +-------------------------------+
 </pre></div>
 </div>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -464,31 +466,22 @@ commentsRunWhenDOMLoaded(addUtterances);
               </div>
               
         
-            
-
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="build-ai.html" title="上一页 页">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">上一页</p>
-                <p class="prevnext-title">从零开始搭建 AI 环境</p>
-            </div>
-        </a>
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="build-ai.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">从零开始搭建 AI 环境</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../tutorials/index.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">指南</p>
     </div>
-     <div id="next">
-        <a class="right-next" href="../tutorials/index.html" title="下一页 页">
-            <div class="prevnext-info">
-                <p class="prevnext-label">下一页</p>
-                <p class="prevnext-title">指南</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
         
         </div>
@@ -514,8 +507,7 @@ commentsRunWhenDOMLoaded(addUtterances);
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>
